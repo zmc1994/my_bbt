@@ -1,0 +1,85 @@
+<!-- 总列表 -->
+<div class="investment-total clearfix marginAuto w1160">
+	<div class="total-left">
+		<div class="item">
+			<span>项目状态：</span>
+		</div>
+		<div class="item">
+			<span>年化收益：</span>
+		</div>
+		<div class="item">
+			<span>项目期限：</span>
+		</div>
+
+	</div>
+	<div class="total-right">
+		<ul class="right1 clearfix">
+		##for(var i = 0; i < a.length; i++ ){##
+			<li>{{a[i].lis1}}</li>			
+		##}##
+		</ul>
+		<ul class="right2 clearfix">
+		##for(var i = 0; i < b.length; i++){##
+			<li>{{b[i].lis2}}</li>
+		##}##
+		</ul>
+		<ul class="right3 clearfix">
+		##for(var i = 0; i < c.length; i++){##
+			<li>{{c[i].lis3}}</li>
+		##}##
+		</ul>
+	</div>
+	<img src="images/total-bottom.png" alt="">
+</div>
+<!-- 主体内容 -->
+##for(var j = 0; j < list.length; j++){##
+	<div class="investment-detail w1160 marginAuto rel" id="investment-detail">
+		<ul class="detail-top clearfix">
+			<li class="li1">实地</li>
+			<li class="li2">
+			    <a href="">{{list[j].days}}</a>
+			</li>
+			<li class="li3 hotbag1"></li>
+			<li class="li4 hotbag">可使用红包</li>
+		</ul>
+		<ul class="detail-center clearfix">
+			<li class="li1 lh80">
+				<p class="p1">{{list[j].num1}}%</p>
+			</li>
+			<li class="li2 lh80">
+			    <span class="one">{{list[j].month}}</span>
+			</li>
+			<li class="li3 lh80">
+			    <p class="p1-g">{{list[j].money}}元</p>
+			</li>
+			<li class="li4 lh80">
+				<p class="p1-g">{{list[j].style}}元</p>
+			</li>
+		</ul>	
+		<ul class="detail-bottom clearfix">
+			<li>预期年化收益率</li>
+			<li>期限</li>
+			<li>剩余可投金额</li>
+			<li>还款方式</li>
+		</ul>
+		<div class="paybtn abs">{{list[j].btn}}</div>
+	</div>	
+##}##
+<!-- 结尾 -->
+<div class="investment-pagination w1160 marginAuto" id="investment-pagination">
+    <a href=""><<</a>
+    <a href=""><</a>
+	<a href="" class="show">1</a>
+	<a href="">2</a>
+	<a href="">3</a>
+	<a href="">4</a>
+	<a href="">5</a>
+	<a href="">6</a>
+	<a href="">7</a>
+	<a href="">8</a>
+	<a href="">9</a>
+	<span>...</span>
+	<a href="">84</a>
+	<a href="">></a>
+	<a href="">>></a>
+</div>

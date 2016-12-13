@@ -1,0 +1,56 @@
+<div id="runloop" class="rel">
+    <div class="info abs">
+        <div class="content clearfix marginAuto">
+            <div class="OJT">
+                <a href="#" title=""><img src="images/indexbannerInfo1.png" alt=""></a>
+            </div>
+            ##for(var i = 0; i
+            < bannerInfo.length; i++ ){## 
+            <div class="info">
+                <h4>{{bannerInfo[i].title}}</h4>
+                <p>{{bannerInfo[i].number}}</p>
+            </div>
+            ##}##
+        </div>
+    </div>
+</div>
+<div class="index-nav">
+    <div class="detail marginAuto clearfix">
+        ##for(var n = 0; n
+        < indexNav.length; n ++ ){## 
+        <div class="infoBlock">
+            <div class="rotateItem rel">
+                <img src="{{indexNav[n].src}}" alt="" class="abs img1">
+            </div>
+            <h4>{{indexNav[n].title}}</h4>
+            <p>{{indexNav[n].info}}</p>
+        </div>
+        ##}##
+    </div>
+</div>
+<div class="index-news marginAuto clearfix">
+    <div class="left clearfix">
+        <div class="notice clearfix">
+            <span>公告栏</span>
+            <img src="images/annaunce-icon.png" alt="">
+        </div>
+        <div class="annaunce clearfix">
+            ##for(var i = 0; i
+            < annaunce.length; i++ ){## <a href="#" title="" class="clearfix">
+                <p>{{annaunce[i].title}}</p>
+                <p class="anutime">发布时间:{{annaunce[i].time}}</p>
+                </a>
+                ##}##
+        </div>
+        <div class="moreItems"><a href="" title="">更多>></a></div>
+    </div>
+    <div class="right">
+        <a href="" title="" class="left">
+                2080年1月运营报告
+            </a>
+        <a href="" title="" class="right">更多>></a>
+    </div>
+</div>
+<div id="indexDetail"></div>
+<div id="adNews"></div>
+<div id="cooper"></div>

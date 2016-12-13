@@ -1,0 +1,168 @@
+<div class="list1 clearfix marginAuto">
+    <div class="left">
+        <a href="#" title="" class="rel">
+            <img src="{{list1.imgs[1]}}" alt="" class="head abs">
+            <img src="{{list1.imgs[0]}}" alt="" class="money abs">
+            <img src="{{list1.imgs[2]}}" alt="" class="bodys abs">
+            <h1>{{list1.imgDetail[0]}}</h1>
+            <p class="abs">
+                <span>{{list1.imgDetail[1]}}</span>
+                <span class="active">{{list1.imgDetail[2]}}</span>
+            </p>
+        </a>
+    </div>
+    <div class="middle clearfix">
+        ##for(var i = 0; i < list1.title1.length; i++){##
+        <div>
+        ##if( i == 0){##
+        <p class="active top">{{list1.title1[i]}}</p>
+        ##}else{##
+            <p class="top">{{list1.title1[i]}}</p>
+        ##}##
+            <p class="bot">{{list1.title2[i]}}</p>
+        </div>
+        ##}##
+        <div class="last">
+            <a href="#" class="rel">
+                <span class="rel">{{list1.state}}</span>
+                <span class="abs"></span>
+            </a>
+        </div>
+    </div>
+    <div class="right">
+        <a href="" title="">
+            <img src="{{list1.imgs[3]}}" alt="">
+        </a>
+        
+    </div>
+</div>
+<div class="list2 clearfix listPublic  marginAuto">
+    <div class="lis1">
+        <a href="" title="">
+            <div class="top">{{list2.imgDetail[0]}}</div>
+            <div class="img">
+                <img src="{{list2.bgimg}}" alt="">
+                <div class="middleLine"></div>
+                <div class="mouth clearfix abs">
+                    <div class="mouthleft rel">
+                        <img src="{{list2.number[0]}}" alt="" class="abs active imgs1">
+                        <img src="{{list2.number[1]}}" alt="" class="abs imgs1">
+                    </div>
+                    <div class="mouthright rel">
+                        <img src="{{list2.number[1]}}" alt="" class="abs imgs2 active">
+                        <img src="{{list2.number[3]}}" alt="" class="abs imgs2">
+                        <img src="" alt="" class="abs">
+                        <img src="{{list2.number[4]}}" alt="" class="abs imgs2">
+                        <img src="{{list2.number[5]}}" alt="" class="abs imgs2">
+                        <img src="{{list2.number[2]}}" alt="" class="abs imgs2">
+                    </div>
+                </div>
+            </div>
+            <p>{{list2.imgDetail[1]}}</p>
+            <p>{{list2.imgDetail[2]}}</p>
+        </a>
+    </div>
+    ##for(var i = 0; i < 3; i++ ){##
+    <div class="lis2">
+        <h2>定期-<span>{{list2.block1.title}}</span></h2>
+        <p>
+            <span class="outer1">
+                <span class="inner1"></span>
+                {{list2.block1.nav[0]}}
+            </span>
+            <span class="outer">
+                <span class="inner2"></span>
+                {{list2.block1.nav[1]}}
+            </span>
+        </p>
+        <div class="profit">
+            <h3>{{list2.block1.profit[0]}}</h3>
+            <p>{{list2.block1.profit[1]}}</p>
+        </div>
+        <h1>期限：<span>{{list2.block1.dataline}}</span>个月</h1>
+        <div class="btn">
+            <a href="" class="rel">
+                <span class="rel">{{list2.block1.state}}</span>
+                <span class="abs"></span>
+            </a>
+        </div>
+    </div>
+    ##}##
+</div>
+<div class="list3">
+    <div class="sanbiao marginAuto clearfix listPublic">
+        <div class="left">
+            <a href="" title="">
+                <h1>{{list3.imgDetail[0]}}</h1>
+                <div class="img rel">
+                    <img src="{{list3.img[0]}}" alt="" class="img1">
+                    <img src="{{list3.img[1]}}" alt="" class="img2 abs">
+                    <div id="num" class="abs">
+                        0%
+                    </div>
+                </div>
+                <p>{{list3.imgDetail[1]}}</p>
+                <p>{{list3.imgDetail[2]}}</p>
+            </a>
+        </div>
+        <div class="middle">
+            <dl>
+                <dt class="clearfix">
+                    ##for( var i = 0; i < list3.title.length; i++ ){##
+                    <span class="dts{{i}}">{{list3.title[i]}}</span>
+                    ##}##
+                </dt>
+                
+                ##for(var n = 0; n < 3; n++){##
+                <dd class="clearfix">
+                    ##if(n == 0){##
+                        <div class="haveMoney">
+                            <span class="hongbao"></span>可使用红包
+                        </div>
+                    ##}else{##
+                        <div class="haveMoney"></div>
+                    ##}##
+                    <a href="" class="name">{{list3.name[n]}}</a>
+                    <span class="profit">
+                        {{list3.profit1[n]}}<span>%+{{list3.profit2[n]}}</span>
+                    </span>
+                    <span class="time">{{list3.time[n]}}</span>
+                    <span class="money">{{list3.money[n]}}</span>
+                    <div class="btn">
+                        <a href="" title="" class="rel">
+                        ##if( list3.state[n] == '马上投资' ){##
+                            <span class="ani rel">{{list3.state[n]}}</span>
+                            <span class="abs top"></span>
+                        ##}else{##
+                            <span class="abs bot"></span>
+                            <span class="ani rel">{{list3.state[n]}}</span>
+                        ##}##
+                        </a>
+                    </div>
+                </dd>
+                ##}##
+            </dl>
+        </div>
+        <div class="right">
+            <h1>
+                {{list3.actives.title}}
+            </h1>
+            <div class="userNav clearfix">
+                ##for(var i = 0; i < list3.actives.nav.length; i++ ){##
+                <span class="nsp{{i}}">{{list3.actives.nav[i]}}</span>
+                ##}##
+            </div>
+            <div class="users">
+                <ul id="userInfo">
+                ##for(var cnt = 0; cnt < list3.actives.phone.length; cnt++ ){##
+                    <li class="clearfix">
+                        <span>{{list3.actives.phone[cnt]}}</span>
+                        <span>{{list3.actives.time[cnt]}}</span>
+                        <span>{{list3.actives.money[cnt]}}</span>
+                    </li>
+                ##}##
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

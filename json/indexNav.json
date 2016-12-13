@@ -1,0 +1,22 @@
+[
+    {
+        "src":"images/index-infoIcon1.png",
+        "title":"理事单位",
+        "info":"中国互联网金融协会理事单位"
+    },
+    {
+        "src":"images/index-infoIcon2.png",
+        "title":"严格风控",
+        "info":"37道风控、大数据反欺诈"
+    },
+    {
+        "src":"images/index-infoIcon3.png",
+        "title":"权威认证",
+        "info":"CFCA电子签章确保合同唯一性"
+    },
+    {
+        "src":"images/index-infoIcon4.png",
+        "title":"资金安全",
+        "info":"花海保险对交易资金全程承保"
+    }
+]

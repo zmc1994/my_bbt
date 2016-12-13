@@ -1,0 +1,320 @@
+ .container {
+     width: 1160px;
+     margin: 0 auto;
+ }
+ 
+ .login-top {
+     background-color: white;
+     width: 100%;
+     .header-logo {
+         float: left;
+         font-size: 0px;
+         a {
+             float: left;
+             &.active {
+                 margin: 16px 0 10px 17px;
+                 padding-left: 15px;
+                 border-left: 1px solid #dcdcdc;
+             }
+             span {
+                 display: inline-block;
+                 line-height: 68px;
+                 font-size: 24px;
+                 font-weight: 700;
+                 padding: 0 2px;
+                 &.icon1 {
+                     color: #f00;
+                 }
+                 &.icon2 {
+                     color: #ff0;
+                 }
+                 &.icon3 {
+                     color: #0f0;
+                 }
+             }
+             img {
+                 display: block;
+                 width: 250px;
+                 height: 38px;
+             }
+         }
+     }
+     .header-logo-right {
+         float: right;
+         img {
+             display: inline-block;
+             width: 20px;
+             height: 20px;
+             vertical-align: middle;
+         }
+         span {
+             font-size: 16px;
+         }
+     }
+ }
+ 
+ .bg-login {
+     position: relative;
+     background: url(../images/login-bg.jpg) center top no-repeat;
+     width: 100%;
+     height: 550px;
+     overflow: hidden;
+     background-size: 2000px 550px!important;
+     .login-right,
+     .signIn {
+         position: absolute;
+         right: 80px;
+         top: 0px;
+         opacity: 1;
+         // transition:all 1s linear;
+         background: #fff;
+         margin-top: 20px;
+         padding-bottom: 30px;
+         width: 523px;
+         h2 {
+             font-size: 24px;
+             margin: 20px 0px;
+             text-align: center;
+             color: #004098;
+         }
+         .login {
+             color: #004098;
+         }
+         .register-left {
+             float: left;
+             width: 75px;
+             margin-left: 30px;
+             p {
+                 height: 42px;
+                 line-height: 42px;
+                 margin-bottom: 15px;
+                 text-align: right;
+             }
+         }
+         #form_register {
+             float: left;
+             margin-left: 25px;
+             margin-right: 70px;
+             input {
+                 height: 42px;
+                 width: 320px;
+                 border-radius: 3px;
+                 border: 0 none;
+                 border: 1px solid #cccccc;
+                 line-height: 42px;
+                 margin-bottom: 15px;
+                 padding-left: 5px;
+                 display: block;
+                 outline: none;
+             }
+             .yanzhengma {
+                 input {
+                     width: 160px;
+                     float: left;
+                 }
+                 div {
+                     width: 110px;
+                     height: 42px;
+                     background: #e1e1e1 url('../images/captcha1.png') center center no-repeat;
+                     background-size: 75px 30px;
+                     float: left;
+                     margin: 0px 8px;
+                 }
+                 img {
+                     margin-top: 3px;
+                     float: left;
+                     cursor: pointer;
+                 }
+             }
+             .huoqu-box {
+                 input {
+                     width: 213px;
+                     float: left;
+                 }
+                 .btn {
+                     width: 110px;
+                     height: 42px;
+                     line-height: 42px;
+                     padding-left: 0px 25px;
+                     background-color: #2b71d2;
+                     text-align: center;
+                     color: white;
+                     float: left;
+                     border: none;
+                     cursor: pointer;
+                 }
+             }
+             .input-ty {
+                 margin: 9px 0;
+                 input {
+                     width: 14px;
+                     height: 14px;
+                     // display: inline-block;
+                     float: left;
+                     margin-bottom: 0px;
+                     margin-top: 3px;
+                     margin-right: 5px;
+                 }
+                 p {
+                     float: left;
+                     a {
+                         color: #004098;
+                     }
+                     .forget {
+                         margin-left: 170px;
+                         color: #252525;
+                         &:hover {
+                             color: #004098;
+                         }
+                     }
+                 }
+             }
+             .password,
+             .user,
+             .valid,
+             .usererror,
+             .passworderror,
+             .form {
+                 width: 320px;
+                 color: red;
+                 display: none;
+                 margin-bottom: 10px;
+                 span {
+                     width: 12px;
+                     line-height: 12px;
+                     border-radius: 6px;
+                     background-color: red;
+                     color: white;
+                     display: inline-block;
+                     text-align: center;
+                     font-weight: bolder;
+                     font-size: 12px;
+                     margin-right: 5px;
+                 }
+             }
+             .reg-button {
+                 display: block;
+                 width: 320px;
+                 height: 42px;
+                 line-height: 42px;
+                 color: white;
+                 text-align: center;
+                 background-color: #2b71d2;
+             }
+             .signIn-footer {
+                 margin: 10px 0px;
+                 span {
+                     width: 18px;
+                     height: 18px;
+                     display: inline-block;
+                     background: url('../images/huahailogo.png') no-repeat;
+                     margin-right: 20px;
+                     vertical-align: middle;
+                 }
+             }
+         }
+         .register-bottom {
+             float: right;
+             height: 50px;
+             p {
+                 display: inline-block;
+                 // margin-top: 10px;
+                 // vertical-align: middle;
+                 line-height: 50px;
+                 float: left;
+             }
+             .reg-iconslogin,
+             .reg-iconssiginIn {
+                 width: 50px;
+                 height: 50px;
+                 margin: 0 13px;
+                 background: #e8f1fe url('../images/reg-icons.png') 11px -190px no-repeat;
+                 cursor: pointer;
+                 display: inline-block;
+                 float: right;
+                 &:hover {
+                     background: #2b71d2 url('../images/reg-icons.png') 11px -156px no-repeat;
+                 }
+             }
+         }
+     }
+     @-webkit-keyframes signIn {
+         from {
+             top: -459px;
+             opacity: 0;
+         }
+         to {
+             top: 0px;
+             opacity: 1;
+         }
+     }
+     @keyframes signIn {
+         from {
+             top: -459px;
+             opacity: 0;
+         }
+         to {
+             top: 0px;
+             opacity: 1;
+         }
+     }
+     @-webkit-keyframes login {
+         from {
+             opacity: 0;
+             top: -530px;
+         }
+         to {
+             opacity: 1;
+             top: 0px;
+         }
+     }
+     @keyframes login {
+         from {
+             opacity: 0;
+             top: -530px;
+         }
+         to {
+             opacity: 1;
+             top: 0px;
+         }
+     }
+     .signIn-animation {
+         animation: signIn 0.5s ease-out forwards;
+     }
+     .login-animation {
+         animation: login 0.5s ease-out forwards;
+     }
+     .signIn {
+         margin-top: 80px;
+         position: absolute;
+         right: 80px;
+         top: -495px;
+         opacity: 0;
+     }
+ }
+ 
+ .login-footer {
+     width: 100%;
+     background: #f4f4f4;
+     font-size: 12px;
+     padding-bottom: 70px;
+     ul {
+         overflow: hidden;
+         width: 404px;
+         margin: 22px auto;
+         li {
+             float: left;
+             display: inline-block;
+             height: 18px;
+             line-height: 18px;
+             margin: 0;
+             a {
+                 padding: 0 16px;
+                 border-right: 1px solid #252525;
+             }
+         }
+     }
+     p {
+         text-align: center;
+     }
+ }

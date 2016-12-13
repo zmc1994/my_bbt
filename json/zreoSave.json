@@ -1,0 +1,42 @@
+{
+	"list":[
+		{
+			"name":"预期年化收益率",
+			"value":"5.80%"
+		},	
+	
+		{
+			"name":"每日万元收益",
+			"value":"1.5452元"
+		},
+		{
+			"name":"起投金额",
+			"value":"￥100.00"
+		},
+		{
+			"name":"剩余可投金额",
+			"value":"￥3,758,700"
+		},
+		
+		{
+			"img":"images/feature-1.png",
+			"text":"优质资产",
+			"text":"银行承兑汇票"
+		},
+		{
+			"img":"images/feature-2.png",
+			"text":"期限灵活",
+			"text":"7*24小时随存随取"
+		},
+		{
+			"img":"images/feature-3.png",
+			"text":"当日计息",
+			"text":"100元起投，当日计息"
+		},
+		{
+			"img":"images/feature-4.png",
+			"text":"风险极低",
+			"text":"银行无条件兑付"
+		}
+	]
+}

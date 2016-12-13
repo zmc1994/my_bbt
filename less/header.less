@@ -1,0 +1,214 @@
+#topHeader {
+    width: 100%;
+    background-color: #f3f3f3;
+    font-size: 13px;
+    .container {
+        width: 1160px;
+        line-height: 30px;
+        .containerLeft {
+            float: left;
+            width: 500px;
+            font-size: 0px;
+            span {
+                float: left;
+                font-size: 13px;
+                line-height: 30px;
+                color: #3c3c3c;
+                box-sizing: border-box;
+                img {
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: middle;
+                }
+                &.imgSpan,
+                &.active {
+                    margin-right: 5px;
+                }
+                &.imgSpan {
+                    padding-top: 5px;
+                }
+                &.active:hover {
+                    color: #6a40a3;
+                    cursor: pointer;
+                }
+            }
+        }
+        .containerRight {
+            float: right;
+            ul>li {
+                float: left;
+                a {
+                    display: block;
+                    color: #565656;
+                    font-size: 13px;
+                    line-height: 30px;
+                    &.normal {
+                        margin: 0 12px;
+                    }
+                    &.unnormal {
+                        margin-right: 0px;
+                    }
+                    &.active1,
+                    &.active2 {
+                        padding-left: 23px;
+                    }
+                    &.active1 {
+                        background-image: url('../images/header-wechat.png');
+                    }
+                    &.active1:hover {
+                        background-image: url('../images/header-wechat1.png');
+                    }
+                    &.active2 {
+                        background-image: url('../images/header-iconphone.png');
+                    }
+                    &.active2:hover {
+                        background-image: url('../images/header-iconphone1.png');
+                    }
+                    &.backSize {
+                        background-position: center left;
+                        background-repeat: no-repeat;
+                        background-size: 20px 20px;
+                    }
+                }
+            }
+        }
+    }
+    &.active {
+        margin-bottom: 70px;
+    }
+}
+
+#header {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, .9);
+    border-bottom: 2px solid #eee;
+    &.fix {
+        position: fixed;
+    }
+    .header-content {
+        width: 1160px;
+        .header-logo {
+            float: left;
+            font-size: 0px;
+            a {
+                float: left;
+                &.active {
+                    margin: 16px 0 10px 17px;
+                    padding-left: 15px;
+                    border-left: 1px solid #dcdcdc;
+                }
+                span {
+                    display: inline-block;
+                    line-height: 68px;
+                    font-size: 24px;
+                    font-weight: 700;
+                    padding: 0 2px;
+                    &.icon1 {
+                        color: #f00;
+                    }
+                    &.icon2 {
+                        color: #ff0;
+                    }
+                    &.icon3 {
+                        color: #0f0;
+                    }
+                }
+                img {
+                    display: block;
+                    width: 250px;
+                    height: 38px;
+                }
+            }
+        }
+        .header-contant {
+            float: right;
+            ul {
+                li.noBrather,
+                li.user {
+                    float: left;
+                    font-size: 16px;
+                    height: 68px;
+                }
+                li.user {
+                    margin-left: 20px;
+                    a {
+                        padding: 0 12px;
+                        display: inline-block;
+                        color: #fff;
+                        height: 30px;
+                        line-height: 30px;
+                        border-radius: 6px;
+                        float: left;
+                        width: 80px;
+                        font-weight: 400;
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+                    a.login {
+                        margin-left: 36px;
+                        background: #40b6f3;
+                    }
+                    a.register {
+                        margin-left: 10px;
+                        background: #f39500;
+                    }
+                }
+                li.noBrather {
+                    margin: 0 20px;
+                    border-bottom: 2px solid #fff;
+                    a,
+                    span {
+                        display: block;
+                        padding: 0 12px;
+                        color: #252525;
+                        line-height: 66px;
+                    }
+                    a {
+                        height: 66px;
+                        line-height: 66px;
+                    }
+                    span {
+                        height: 68px;
+                        line-height: 68px;
+                    }
+                    &:hover,
+                    &.active {
+                        border-bottom: 2px solid #004098;
+                    }
+                    &:hover .showBorder,
+                    &.active .showBorder {
+                        color: #004098;
+                    }
+                    ul.manageMoney {
+                        background-color: #fff;
+                        li.manage {
+                            height: 40px;
+                            a {
+                                display: block;
+                                text-align: center;
+                                height: 40px;
+                                line-height: 40px;
+                                font-size: 14px;
+                                color: #252525;
+                                &:hover {
+                                    background-color: #a2d4ff;
+                                    color: #3240b1;
+                                }
+                            }
+                        }
+                        &.active {
+                            background-color: rgba(255, 255, 255, .9);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

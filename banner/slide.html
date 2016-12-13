@@ -1,0 +1,16 @@
+<div class="showImg">
+    ##for(var i=0;i<imgs.length;i++){##
+    <a href="" title="" class="slideImg"><img src="{{imgs[i].imgsrc}}" alt=""></a>
+    ##}##
+    <div class="slidePointer">
+        ##for(var i=0;i<imgs.length;i++){##
+            ##if(i==imgs.length-1){##
+            <span class="active"></span>
+            ##}else{##
+            <span></span>
+            ##}##
+        ##}##
+    </div>
+    <span class="pointer pointerLeft icon"> &#xe643; </span>
+    <span class="pointer pointerRight icon"> &#xe677; </span>
+</div>

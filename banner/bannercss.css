@@ -1,0 +1,64 @@
+.showImg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.showImg a.slideImg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.showImg a.slideImg img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.showImg .slidePointer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 110px;
+    text-align: center;
+    font-size: 0;
+    z-index: 2;
+}
+.showImg .slidePointer span{
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background: #eee;
+    cursor: pointer;
+    display: inline-block;
+}
+.showImg .slidePointer span:hover,.showImg .slidePointer span.active{
+    background: #ff0;
+}
+.showImg span.pointer{
+    position: absolute;
+    top: 50%;
+    width: 55px;
+    height: 100px;
+    margin-top: -40px;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 2;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    display: none;
+}
+.showImg:hover span.pointer{
+    display: block;
+}
+.showImg span.pointerLeft{
+    left: 0;
+}
+.showImg span.pointerRight{
+    right: 0;
+}

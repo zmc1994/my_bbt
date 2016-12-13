@@ -1,0 +1,140 @@
+body{background-color: #f1efe9;}
+.w1160{width: 1160px;}
+.lh80{line-height: 80px;}
+.mb40{margin-bottom: 40px;}
+.investment-total{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	.total-left{
+		float: left;
+	    // box-shadow: 1px 5px 10px #888888;
+		.item{
+			padding: 0 20px;
+			padding-top: 11px;
+			background-color: #a2d4ff;
+			border-radius: 3px;
+			span{
+				display: inline-block;
+				width: 105px;
+				text-align: center;				
+				padding-bottom: 12px;
+				border-bottom: 1px solid #b8deff;
+				&.last-child{border-bottom: none;}
+			}
+		}
+	}
+	.total-right{
+		float: right;
+		width: 1015px;
+		background-color: #fff;
+		box-shadow: 0px 3px 5px #ccc;
+		cursor: pointer;
+		li{
+			float: left;
+			padding: 0px 12px;
+			margin: 12px 15px;
+			border-radius: 8px;
+			&.active{background-color: #c7e5ff;}
+			&:hover{background-color: #c7e5ff;}
+		}
+	}
+}
+
+#investment-detail{
+	background-color: #fff;
+	border-radius: 3px;
+	margin-top: 10px;
+	padding: 14px 84px 29px 35px;
+	.detail-top{
+		border-bottom: 1px dotted #eee;
+		padding-bottom: 10px;
+		li{
+			float: left;
+			&.li1{
+				font-size: 12px;
+				color: #40b6f3;
+				border: 1px solid #40b6f3;
+				border-radius: 6px;
+				padding: 4px 6px;
+				margin-right: 10px;
+			}
+			&.li2{
+				font-size: 18px;
+				width: 240px;
+				&:hover{
+					a{color: #004098;}
+				}
+			}	
+			&.li3{
+				width: 34px;
+				height: 24px;
+				background: url(../images/icon-loan.png) -34px 0 no-repeat;
+			}	
+			&.li4{
+				line-height: 24px;
+				font-size: 12px;
+			}		
+		}
+	}
+	.detail-center{
+		li{
+			text-align: center;
+			height: 80px;
+			width: 20%;
+			float: left;
+			.p1-g{font-size: 18px;}
+			&.li1{
+				.p1{
+				color: #ff6a06;
+				font-size: 30px;
+				}
+			}
+			&.li2{
+				.one{font-size: 18px;}
+			}
+		}
+	}
+	.detail-bottom{
+		li{
+			float: left;
+			width: 20%;
+			text-align: center;
+			color: #a0a0a0;
+		}
+	}
+	.paybtn{
+		top: 94px;
+		right: 84px;
+		width: 120px;
+		height: 38px;
+		line-height: 38px;
+		color: #fff;
+		text-align: center;
+		cursor: pointer;
+		border-radius: 5px;
+		background-color: #ddd;
+	}
+}
+
+.investment-pagination{
+	background-color: #fff;
+	border-top: 1px solid #eee;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+    a{
+    	border: 1px solid #e8e8e8;
+    	padding: 6px 12px;
+    	margin: 0px 5px;
+    	&.show{
+    		color: #fff;
+    		background-color: #a2d4ff;
+    	}
+    	&:hover{
+    		color: #fff;
+    		background-color: #a2d4ff;
+    	}
+    }
+    span{margin: 0px 5px;}
+}
+

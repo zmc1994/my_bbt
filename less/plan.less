@@ -1,0 +1,180 @@
+@font-face {font-family: "iconfont";
+  src: url('../font/iconfont.eot?t=1478746187847'); /* IE9*/
+  src: url('../font/iconfont.eot?t=1478746187847#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/iconfont.woff?t=1478746187847') format('woff'), /* chrome, firefox */
+  url('../font/iconfont.ttf?t=1478746187847') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg?t=1478746187847#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.plan-container{width: 1160px;
+margin:0px auto;}
+
+.planPage{background-color:#f1efe9;padding-bottom: 40px;
+	.plan-banner{background: url('../images/banner-bg.png') repeat;height: 372px;padding-top: 38px;
+	.plan-container{height:334px;background: url('../images/uplanBan-bg1.png') no-repeat;background-size: 100% 100%;
+	   .banner-left{float: left;width: 240px;padding: 30px 80px;text-align: center;box-sizing: content-box;
+	   	h3{font-size: 24px;font-weight: 400;text-align: center;font-family: "微软雅黑";}
+	   	.line{line-height: 2px;padding:0px 10px;text-align:center;border-left: 50px solid #f3c850;border-right:50px solid #f3c850;margin: 30px 0px;    background: #fdf3a9;font-size: 16px;
+             color: #eb6f01;}
+             .rata{
+             	span{    font-size: 38px;    color: #ff2f06;    text-align: center;font-weight: '微软雅黑';
+             	&:after{content: '%';color: #ff2f06;font-size: 26px;}
+             }
+             }
+              .tip{
+             	div{ text-align: center;font-family: '微软雅黑';
+                      display: inline-block;
+                      font-size: 16px;
+                      padding: 4px 20px;
+                      border: 1px solid #fcaa30;
+                      border-radius: 12px;
+                      margin: 5px;
+             	}
+             }
+
+	   }
+	   .banner-right{float:left;width: 716px;height: 234px;    margin-top:30px;
+	   	img{width: 100%;height: 100%;}
+	   }
+	}
+  }
+  .plan-content{
+  	.plan-container{
+          .section{padding:0px 35px;background-color: #fff;margin-bottom: 20px;
+          	.top{line-height: 53px;border-bottom:1px dashed #eee;
+          		div{float: left;margin-right: 40px;
+          			.icon1{width: 24px;height: 24px;display: inline-block;background: url('../images/icon-loan.png') no-repeat -34px 0px;margin-right: 10px;vertical-align: middle;}
+          			.icon2{
+          				width: 24px;height: 24px;display: inline-block;background: url('../images/icon-loan.png') no-repeat -68px 0px;margin-right: 10px;vertical-align: middle;
+          			}
+          		}
+          	}
+          	.detail{padding:20px;line-height: 35px;box-sizing: border-box;
+          		.code,.rata,.month,.charge,.btn{
+          			float: left;padding: 0 10px;box-sizing: border-box;margin-top: 20px;
+          		}
+          		.code{width: 25%;margin-top: 30px;
+                      
+          			a{display: inline-block;
+                     em{font-size: 18px;color: #383838;}
+          			.first{font-size: 24px;color: #004098;}
+          			}
+          		}
+          		.rata{width: 15%;
+          			p{text-align: center;color: #a0a0a0;
+                         font-size: 14px;
+                         height: 35px;
+                         line-height: 35px;
+                         &.first{color: #ff6a06;    font-size: 34px;font-family: '微软雅黑';
+                         &:after{content: '%';color: #ff6a06;
+                               font-size: 24px;font-family: '微软雅黑';padding-left:10px;}
+                           }
+                       }
+                         }
+          		.month{width: 20%;
+          			p{text-align: center;color: #a0a0a0;font-size: 14px;height: 35px;line-height: 35px;
+          				&.first{color: #252525;
+                            font-size: 18px;}
+          			}
+                       }
+          		.charge{width: 20%;
+          			p{text-align: center;color: #a0a0a0;font-size: 14px;height: 35px;line-height: 35px;
+          				&.first{color: #252525;
+                            font-size: 18px;}
+          			}
+                       
+                        }
+                .btn{
+               	    width: 20%;text-align: center;
+               	    a{position: relative;overflow: hidden;
+               	    	display: inline-block;width: 120px;height: 40px;
+               	    	background: #2b71d2;border-radius: 7px;
+               	    	&:hover{
+                            .up{top: 0px;}
+               	    	}
+               	    	span{z-index: 3;position: absolute;width: 120px;line-height: 40px;text-align:center;background-color: transparent;color: #fff;border-radius: 7px;top: 0px;left: 0px;}
+               	    	.up{background-color: orange;
+               	    		width: 120px;height: 40px;
+               	    	   border-radius: 7px;position: absolute;
+               	    	   left: 0px;top: 40px;z-index: 1;transition:all 0.3s linear;
+               	    	}
+               	    }
+                }
+               .empty-btn{float:left;width: 20%;text-align: center; margin-top: 20px;
+               	   a{display: inline-block;width: 120px;line-height: 40px;text-align: center;
+               	   	background-color: #ddd;border-radius: 7px;
+               	   	color: #fff;
+               	   }
+               	}
+          	}
+          }
+  	}
+  }
+
+  .plan-footer{
+  	.plan-container{
+  		.title{
+  			h2{font-size: 22px;
+               margin-top: 10px;
+               line-height: 50px;
+               font-weight: 400;}
+  		}
+  		.content{background-color: #fff;
+  			.top{
+  				span{display: inline-block;line-height: 50px;text-align: center;width:16.66%;    background: #fff;font-weight: 700;font-size: 16px;font-family: '微软雅黑';color: black;cursor: pointer;
+  				   &.active{color: #004098;background: #c1e3ff;}
+  				}
+  			}
+  			table{
+  				width: 100%;
+  				thead{tr{background-color:#ecf6ff;}}
+                	tbody{width:100%;tr{&:nth-child(2n){
+  						background-color: #ecf6ff;;
+  					}
+  					&:nth-child(2n-1){
+  						background-color: #fff;
+  					}
+  					}}
+  				tr{
+  					height: 50px;
+  					th,td{color: #797979;line-height: 50px;text-align: center;width:16.66%;
+  					}
+  					td{
+  						&:first-child:hover{
+                             cursor: pointer;color: #2b71d2;
+  						}
+  						&:nth-child(4){
+  							color: #2b71d2;
+  						}
+  					}
+  				}
+  			
+  			}
+  			.pager{padding:20px 0px;
+  				.box{width: 370px;margin:0px auto;
+  					span{display: inline-block;width: 32px;line-height: 32px;text-align: center;margin-right: 5px;color: black;border: 1px solid #e8e8e8;background-color: #fff;cursor: pointer;
+  						&.change{background-color: #a2d4ff;color: white;
+  						}
+  						&:hover{background-color: #a2d4ff;color: white;}
+  						
+  					}
+  				}
+  			}
+  		}
+  	}
+  }
+
+
+}
+
